@@ -1,0 +1,104 @@
+/* Ensures navigation bar is at the top */
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #E4E4DE;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0; 
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #1B1B1B;
+}
+
+/* Ensures that li elements are on the right side */
+nav li {
+    float: left;
+}
+
+/* */
+nav a {
+    display: inline-block;
+    color: #E4E4DE;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 14px 16px;
+    position: relative;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #C4C5BA;
+}
+
+
+nav .active{
+    background-color: #595F39;
+}
+
+
+
+.logoName{
+    color: #E4E4DE;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: large;
+    
+}
+
+/* Allows the logo name to be clickable but not highlighted when hoverd over*/
+
+.logoName:hover{
+    background-color: transparent;
+    color: white;
+}
+
+.top-header{
+    background-color: #C4C5BA;
+    color: #595f39;
+    text-align: center;
+    padding: 30px;
+    font-size: 25px;
+}
+
+.top-header p{
+    font-size: 20px;
+}
+
+.top-header a{
+    color: #595F39;
+}
+
+.form-container {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: #E4E4DE;
+    padding: 20px;
+    max-width: 700px;
+    margin: 10px auto;
+    outline:  0;
+    box-shadow: 5px 3px 5px #595f39;
+    border-radius: 10px;
+}
+
+.column label{
+    color: #1B1B1B;
+    font-size: 16px;
+    margin: centre;
+}
+
+.column input[type="text"]{
+    margin: 7px;
+    padding: 10px;
+    width: 600px;
+    border: 1px solid #C4C5BA;
+    border-radius: 7px;
+}
+
+.textBlock input[type="text"]{
+    margin: 7px;
+    padding: 100px;
+}
