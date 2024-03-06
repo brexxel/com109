@@ -3,6 +3,16 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-color: #E4E4DE;
+
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    justify-content: space-between;
 }
 
 nav ul {
@@ -16,6 +26,7 @@ nav ul {
 /* Ensures that li elements are on the right side */
 nav li {
     float: left;
+
 }
 
 /* */
@@ -27,6 +38,7 @@ nav a {
     padding: 14px 16px;
     position: relative;
     text-decoration: none;
+
 }
 
 nav a:hover {
@@ -59,8 +71,9 @@ nav .active{
     background-color: #C4C5BA;
     color: #595f39;
     text-align: center;
-    padding: 30px;
+    padding: 40px;
     font-size: 25px;
+
 }
 
 .top-header p{
@@ -79,18 +92,17 @@ nav .active{
     padding: 20px;
     max-width: 700px;
     margin: 10px auto;
-    outline:  0;
     box-shadow: 5px 3px 5px #595f39;
     border-radius: 10px;
 }
 
-.column label{
+.column label, .textBlock textarea{
     color: #1B1B1B;
     font-size: 16px;
     margin: centre;
 }
 
-.column input[type="text"]{
+.column input[type="text"], .textBlock textarea{
     margin: 7px;
     padding: 10px;
     width: 600px;
@@ -98,7 +110,41 @@ nav .active{
     border-radius: 7px;
 }
 
-.textBlock input[type="text"]{
+.submitButton button{
     margin: 7px;
-    padding: 100px;
+    width: 625px;
+    padding: 13px;
+    border: 1px solid #C4C5BA;
+    border-radius: 7px;
+    background-color:#C4C5BA;
+}
+
+.row{
+    background-color: #C4C5BA;
+    padding: 10px
+}
+
+
+
+.sign-up-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #595F39;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sign-up-btn:hover {
+    background-color: #4B5320;
+}
+
+.main-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* Adjust this value based on your design needs */
+    padding-top: 0px;
 }

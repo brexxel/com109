@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
     <link rel="stylesheet" href="css/style.css">
 
@@ -17,8 +17,14 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
                 <li><a href="login.html">Login</a></li>
-                <li><a href="about.html">About</a></li>
             </ul>
+        </div>
+
+        <div class="searchBar"> 
+            <form>
+                <input type="text" name="search" placeholder="Search...">
+                <button type="go">Go</button>
+            </form>
         </div>
     </nav>
 
@@ -51,25 +57,31 @@
 
             <div class="column">
                 <label for="pnum">Phone Number</label>
-                <input type="text" id="pnum" name="Phone Number" placeholder="your phone number" required>
+                <input type="text" id="pnum" name="Phone Number" placeholder="your phone number..." required>
             </div>
 
             <div class="column">
-                <label for="pnum">Phone Number</label>
-                <input type="text" id="pnum" name="Phone Number" placeholder="your phone number" required>
-            </div>
-
-            <div class="column">
-                <label for="pnum">Phone Number</label>
-                <input type="text" id="pnum" name="Phone Number" placeholder="your phone number" required> 
-            </div>
+                <label for="pc">Postcode</label>
+                <input type="text" id="pc" name="pc" placeholder="your Postcode..." required>
+            </div> 
            
             <div class="textBlock">
-                <label for="pnum">Phone Number</label>
-                <input type="text" id="pnum" name="Phone Number" placeholder="your phone number" required> 
+                <label for="reason">Reason For Contact</label>
+                <textarea id="reason" name="reason" placeholder="tell us why you are reaching out..." required rows="5" cols"50"></textarea>> 
+            </div>
+
+            <div class="submitButton">
+                <button type="button">Submit</button>
             </div>
 
     </main>
+
+    <footer class="footer">
+        <div class = "row">
+            <label for="cname">@ Company name</label>
+        </div>
+        
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
