@@ -1,23 +1,70 @@
 /* Ensures navigation bar is at the top */
 body {
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: #E4E4DE;
+    padding: 0;
+    height: 100%;
+    background-color: #14453D;;
 
 }
 
-.navbar{
+#entirePageContainer {
+    min-height: 100vh;
+}
+
+.homepage {
+    background: #14453D;;
+
+}
+
+#footer {
+    position: fixed;
+    background-color: #1B1B1B;
+    text-align: left;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    height: 3.5vh;
+}
+
+
+.navbar {
     position: fixed;
     width: 100%;
-    background-color: #333;
+    background-color: #1B1B1B;
     color: white;
-    justify-content: space-between;
 }
 
-nav ul {
+
+
+.search{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -14px; 
+    font-size: 20px; 
+    padding-right: 10px;
+  }
+
+.search input{
+    font-size: 17px;
+    height: 25px;
+}
+
+.search button{
+    height: 32px;
+    font-size: 17px;
+    background-color: white;
+}
+
+.search button:hover{
+    background-color: #E99787;
+
+}
+
+  nav ul {
     padding: 0;
-    margin: 0; 
+    margin: 0;
     list-style-type: none;
     overflow: hidden;
     background-color: #1B1B1B;
@@ -31,10 +78,10 @@ nav li {
 
 /* */
 nav a {
-    display: inline-block;
+    display: block;
     color: #E4E4DE;
     text-align: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 14px 16px;
     position: relative;
     text-decoration: none;
@@ -42,96 +89,116 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #C4C5BA;
+    background-color: #E99787;
 }
 
 
-nav .active{
-    background-color: #595F39;
+nav .active {
+    color: #E99787;
 }
 
 
 
-.logoName{
+.logoName {
     color: #E4E4DE;
     padding: 14px 16px;
     text-decoration: none;
     font-size: large;
-    
+
 }
 
 /* Allows the logo name to be clickable but not highlighted when hoverd over*/
 
-.logoName:hover{
+.logoName:hover {
     background-color: transparent;
     color: white;
 }
 
-.top-header{
-    background-color: #C4C5BA;
-    color: #595f39;
+.top-header {
+    background-color: #14453D;
+    color: #E4E4DE;
     text-align: center;
     padding: 40px;
     font-size: 25px;
 
 }
 
-.top-header p{
+.top-header p {
     font-size: 20px;
 }
 
 .top-header a{
-    color: #595F39;
+    color: white;
 }
 
-.form-container {
+
+#homePageHeader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    background-color: #14453D;
+    color: white;
+}
+
+
+
+#form-container {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    background-color: #E4E4DE;
-    padding: 20px;
+    background-color:#E4E4DE;
+    padding: 40px;
     max-width: 700px;
-    margin: 10px auto;
-    box-shadow: 5px 3px 5px #595f39;
+    margin: 40px auto;
+    box-shadow: 5px 3px 5px black;
     border-radius: 10px;
+    color: black;
 }
 
-.column label, .textBlock textarea{
-    color: #1B1B1B;
+.column label,
+.textBlock textarea {
+    color: black;
     font-size: 16px;
     margin: centre;
 }
 
-.column input[type="text"], .textBlock textarea{
-    margin: 7px;
+.column input[type="text"],
+.textBlock textarea {
+    margin: 10px;
     padding: 10px;
     width: 600px;
-    border: 1px solid #C4C5BA;
+    border: 1px solid white;
     border-radius: 7px;
+    font-size: 15px;
+    color: black;
 }
 
-.submitButton button{
+.submitButton button {
     margin: 7px;
     width: 625px;
     padding: 13px;
-    border: 1px solid #C4C5BA;
+    border: 1px solid white;
     border-radius: 7px;
-    background-color:#C4C5BA;
+    background-color: white;
 }
 
-.row{
-    background-color: #C4C5BA;
-    padding: 10px
-}
-
-footer{
-    text-align: center;
-    padding: 3px;
-    background-color: #C4C5BA;
+.submitButton button:hover{
     color: white;
-    bottom: 0;
-    right: 0;
+    background-color: #E99787;;
+}
+
+
+#footer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding: 2px;
+    color: white;
+    right: 1;
     width: 100%;
+
 }
 
 
@@ -141,68 +208,13 @@ footer{
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
-    color: white;
-    background-color: #595F39;
+    color: black;
+    background-color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .sign-up-btn:hover {
-    background-color: #4B5320;
+    background-color: #E99787;
 }
-
-.main-image {
-    width: 100%; /* Ensure image covers the container */
-    display: block;
-    position: absolute;
-    left: 0;
-    z-index: -1; /* Image sits behind content */
-}
-
-
-.hero {
-    background-image: url('path/to/your/hero-image.jpg'); /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.hero-content h1 {
-    margin: 0 0 20px 0;
-    font-size: 2.5em;
-}
-
-.hero-content p {
-    margin: 0 0 20px 0;
-    font-size: 1.2em;
-}
-
-.hero-btn {
-    background-color: #007BFF; /* Adjust to match your color scheme */
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-
-.about-us {
-    background-color: #f8f9fa; /* A light background to keep it clean */
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.about-us h2 {
-    color: #333; /* Dark text for readability */
-    margin-bottom: 20px;
-}
-
-.about-us p {
-    color: #555; /* Slightly lighter text for the body */
-    max-width: 800px; /* Keeps text lines at a comfortable reading length */
-    margin: auto; /* Centers the text block */
-}
-

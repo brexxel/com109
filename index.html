@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,55 +8,47 @@
 
 </head>
 
-<body>
+
+<body class="homepage">
     <!-- navigation structure with hyperlinks -->
     <nav class="navbar">
         <div>
-        <ul>
-            <li><a href="index.html" class="logoName">Navbar</a></li>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="login.html">Login</a></li>
-        </ul>
+            <ul>
+                <li><a href="index.html" class="logoName">AssignmentOne</a></li>
+                <li><a href="index.html" class="active"><u>Home</u></a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </div>
+        
+        <div class="search"> 
+            <form>
+                <input type="text" name="search" placeholder="Search...">
+                <button type="go">Go</button>
+            </form>
         </div>
     </nav>
 
-    <header class="top-header">
-        <h1>Lorem ipsum dolor</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit repellat sed est velit, inventore maiores delectus</p>
-        <button class="sign-up-btn">Sign Up</button>
-    </header>
+    <div id="entirePageContainer">
+        <div id="pageWrapper">
+            <header class="top-header" id="homePageHeader">
+                <h1>Lorem ipsum dolor</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis doloribus temporibus quas obcaecati
+                    nulla, unde fugit odit ipsum fuga iste iure</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <button class="sign-up-btn">Learn more</button>
+            </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Welcome to Our Project</h1>
-                <p>This is a brief introduction to what we do and why it matters. Join us on our journey!</p>
-                <a href="#about-us" class="hero-btn">Learn More</a>
-            </div>
-        </section>
+            <main>
 
-        <section id="about-us" class="about-us">
-            <h2>About Us</h2>
-            <p>We are a team of passionate individuals working together to make a difference. Our project focuses on [briefly describe the project or mission].</p>
-            <p>Our goal is to [describe the goal or impact of your project]. With your support, we can achieve more.</p>
-        </section>
-
-
-
-    </main>
-
-    <script src="js/script.js"></script>
-    </body>
-
-
-    <footer>
-        <div class = "row">
-            <label for="cname">@ Company name</label>
+                <footer id="footer">
+                    <label for="cname">@ Company name</label>
+                </footer>
+            </main>
         </div>
-        
-    </footer>
+
+
+        <script src="js/script.js"></script>
+</body>
 
 </html>
-
-
