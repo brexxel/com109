@@ -1,14 +1,14 @@
 /* Ensures navigation bar is at the top */
 body {
     margin: 0;
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     background-color: #E4E4DE;
 
 }
 
 .navbar{
     position: fixed;
-    top: 0;
     width: 100%;
     background-color: #333;
     color: white;
@@ -124,6 +124,17 @@ nav .active{
     padding: 10px
 }
 
+footer{
+    text-align: center;
+    padding: 3px;
+    background-color: #C4C5BA;
+    color: white;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+
 
 
 .sign-up-btn {
@@ -142,9 +153,56 @@ nav .active{
 }
 
 .main-image {
+    width: 100%; /* Ensure image covers the container */
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%; /* Adjust this value based on your design needs */
-    padding-top: 0px;
+    position: absolute;
+    left: 0;
+    z-index: -1; /* Image sits behind content */
 }
+
+
+.hero {
+    background-image: url('path/to/your/hero-image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h1 {
+    margin: 0 0 20px 0;
+    font-size: 2.5em;
+}
+
+.hero-content p {
+    margin: 0 0 20px 0;
+    font-size: 1.2em;
+}
+
+.hero-btn {
+    background-color: #007BFF; /* Adjust to match your color scheme */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.about-us {
+    background-color: #f8f9fa; /* A light background to keep it clean */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-us h2 {
+    color: #333; /* Dark text for readability */
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    color: #555; /* Slightly lighter text for the body */
+    max-width: 800px; /* Keeps text lines at a comfortable reading length */
+    margin: auto; /* Centers the text block */
+}
+
